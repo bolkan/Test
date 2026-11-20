@@ -1,0 +1,19 @@
+{
+  "name": "PROBER — Field Console",
+  "short_name": "PROBER",
+  "description": "Service knowledge workspace for MPI TS2000 probe systems",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#09111f",
+  "theme_color": "#0a1423",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
