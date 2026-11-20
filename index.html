@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0a1423">
+<meta name="description" content="PROBER Field Console, service knowledge workspace per sistemi MPI TS2000.">
+<link rel="icon" type="image/svg+xml" href="icon.svg"><link rel="manifest" href="manifest.webmanifest">
+<title>PROBER — Field Console</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js" defer></script><script src="app.js" defer></script>
+</head><body>
+<div class="shell">
+<aside class="sidebar">
+  <div class="brand"><span class="brand-icon">P/</span><div><b>PROBER</b><small>FIELD CONSOLE</small></div></div>
+  <div class="aside-label">WORKSPACE</div>
+  <nav id="nav" aria-label="Navigazione principale">
+    <button class="nav-item active" data-view="home"><span>◈</span> Dashboard</button>
+    <button class="nav-item" data-view="explorer"><span>◎</span> Machine explorer</button>
+    <button class="nav-item" data-view="procedures"><span>▤</span> Procedure</button>
+    <button class="nav-item" data-view="maintenance"><span>▣</span> Maintenance</button>
+    <button class="nav-item" data-view="knowledge"><span>⌕</span> Knowledge search</button>
+    <button class="nav-item" data-view="documents"><span>▥</span> Document library</button>
+    <button class="nav-item" data-view="logbook"><span>✎</span> Service logbook</button>
+  </nav>
+  <div class="aside-footer"><b>● DOCUMENT-DRIVEN</b><p>Ricerca nei documenti caricati. Nessuna diagnosi o intervento automatico sulla macchina.</p></div>
+</aside>
+<section class="workspace">
+<header class="topbar">
+  <div class="breadcrumb"><span>MPI / SEMICONDUCTOR EQUIPMENT</span><strong>Service knowledge workspace</strong></div>
+  <div class="top-actions">
+    <label class="global-search"><span>⌕</span><input id="quick-search" type="search" aria-label="Ricerca rapida" placeholder="Cerca nel manuale…"></label>
+    <select id="model" aria-label="Seleziona modello"><option value="HP">TS2000-HP</option><option value="FAMILY">TS2000 / D / DP</option></select>
+  </div>
+</header>
+<main id="root" class="content"></main>
+</section></div>
+<div role="status" aria-live="polite" id="toast" class="toast"></div>
+</body></html>
